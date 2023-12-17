@@ -31,8 +31,15 @@ string decrypt(string phrase, string key) {
 
 int main()
 {
-    string s4 = encrypt("startwarningiheardreportofourbreakinonthenewsstillwaitingonalarmtestschedulesiwillreportbacktomorrowwithfinalplanforextrasecurityisuggestweburnourlettersafterreadingandswitchourletterstonumbersusingpolybiussquaredropmessageunderthebenchattrainstationend", "sskkuullll"); 
-    cout << s4 << "\n\n"; 
-    string result = decrypt(s4, "sskkuullll");
-    cout << result << "\n";
+    string phrase, key; 
+    cout << "Phrase: ";
+    cin >> phrase;
+
+    cout << "Encryption Key: ";
+    cin >> key; 
+
+    string res = encrypt(phrase, key);
+    cout << "Encrypted Phrase: " << res << endl;
+
+
 }
