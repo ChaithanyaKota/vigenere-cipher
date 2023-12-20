@@ -31,15 +31,27 @@ string decrypt(string phrase, string key) {
 
 int main()
 {
-    string phrase, key; 
+    string c; 
+    cout << "Encrypt/Decrypt (E/D): ";
+    cin >> c;
+
+    string phrase, key;
     cout << "Phrase: ";
     cin >> phrase;
 
-    cout << "Encryption Key: ";
-    cin >> key; 
+    cout << "Key: ";
+    cin >> key;
 
-    string res = encrypt(phrase, key);
-    cout << "Encrypted Phrase: " << res << endl;
+  
+    if(c == "E") { 
+      string res = encrypt(phrase, key);
+      cout << "Encrypted Phrase: " << res << endl;
+    }
+    else { 
+      string res = decrypt(phrase, key);
+      cout << "Decrypted Phrase: " << res << endl;
+    }
+    
 
 
 }
