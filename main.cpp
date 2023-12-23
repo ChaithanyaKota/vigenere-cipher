@@ -35,7 +35,8 @@ int main()
     cout << "Encrypt/Decrypt (E/D): ";
     cin >> c;
 
-    string phrase, key;
+    string phrase;
+    string key;
     cout << "Phrase: ";
     cin >> phrase;
 
